@@ -1,0 +1,200 @@
+/*
+    Created on : 30.11.2015, 21:32:13
+    Author     : Andreas Nagy <anagy@blackmania.de>
+*/
+
+/*
+ * Fonts
+ */
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lato Regular"), local("Lato-Regular"), url(../fonts/Lato-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato-Bold.woff) format('woff');
+}
+@font-face {
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Lato Italic"), local("Lato-Italic"), url(../fonts/Lato-Italic.woff) format('woff');
+}
+@font-face {
+    font-family: "Lato";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Lato Bold Italic"), local("Lato-BoldItalic"), url(../fonts/Lato-BoldItalic.woff) format('woff');
+}
+
+/*
+ * Common
+ */
+.scapp-wrapper {
+    width: 233px;
+    height: 326px;
+    border: 1px solid #F0F0F0;
+}
+
+.scapp-wrapper * {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    color: #747474;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+ * Display
+ */
+.scapp-wrapper .scapp-display {
+    height: 40px;
+    padding: 23px 0px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.scapp-wrapper .scapp-display .scapp-result {
+    height: 40px;
+    background-color: #F0F0F0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.09);
+    padding: 0px 8px;
+}
+
+.scapp-wrapper .scapp-display .scapp-result .scapp-result-text {
+    float: right;
+    line-height: 40px;
+    font-size: 22px;
+    color: #333;
+}
+
+/*
+ * Default Buttons
+ */
+.scapp-wrapper .scapp-buttons button {
+    float: left;
+    width: 57px;
+    height: 47px;
+    margin: 0px 0px 1px 1px;
+    padding: 0;
+    border: 1px solid #F0F0F0;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    background-color: #FFFFFF;
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+
+.scapp-wrapper .scapp-buttons button span {
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.scapp-wrapper .scapp-buttons button:hover {
+    background-color: #F0F0F0;
+    cursor: pointer;
+}
+
+.scapp-wrapper .scapp-buttons button:focus {
+    outline: 0;
+}
+
+.scapp-wrapper .scapp-buttons button:active {
+    transform: scale(0.9);
+    -webkit-box-shadow: inset 0px 0px 35px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 0px 35px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 0px 35px 0px rgba(0,0,0,0.1);
+}
+
+/*
+ * Top Buttons
+ */
+.scapp-wrapper .scapp-buttons button.scapp-button-top {
+    width: 37px;
+    height: 37px;
+    margin: 5px 10px 6px 11px;
+    border: none;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+    background-color: #F0F0F0;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-top:hover {
+    background-color: #D0D0D0;
+}
+
+/*
+ * Edge Buttons
+ */
+.scapp-wrapper .scapp-buttons button.scapp-button-edge {
+    width: 37px;
+    height: 37px;
+    margin: 5px 10px 6px 11px;
+    border: none;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+    background-color: #252525;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-edge span {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-edge:hover {
+    background-color: #454545;
+}
+
+/*
+ * Special Buttons
+ */
+.scapp-wrapper .scapp-buttons button.scapp-button-divide {
+    background-color: #C02082;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-divide:hover {
+    background-color: #E040A2;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-multiply {
+    background-color: #EE751E;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-multiply:hover {
+    background-color: #FF953E;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-substract {
+    background-color: #E73C2F;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-substract:hover {
+    background-color: #FF5C4F;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-add {
+    background-color: #7AC142;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-add:hover {
+    background-color: #9AE162;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-zero {
+    width: 115px;
+}
+
+.scapp-wrapper .scapp-buttons button.scapp-button-invert {
+    letter-spacing: -0.1em;
+}
